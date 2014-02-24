@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+<TextView 
+    android:text="" 
+    android:id="@+id/out" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content">
+    S
+</TextView>
+    <Button
+        android:id="@+id/OnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/TurnOn" />
+
+    <Button
+        android:id="@+id/DiscButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/OnButton"
+        android:layout_below="@+id/OnButton"
+        android:layout_marginTop="27dp"
+        android:text="@string/Discoverable" />
+
+    <Button
+        android:id="@+id/OffButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DiscButton"
+        android:layout_below="@+id/DiscButton"
+        android:layout_marginTop="28dp"
+        android:text="@string/TurnOff" />
+
+</RelativeLayout>
